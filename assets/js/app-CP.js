@@ -109,12 +109,12 @@ PRIMER PISO:
     7. ESTAR ESPERA                                                 :EE1
     8. BAÑOS                                                        :B1
 SEGUNET PISO:
-    1. DESINTROMETRÍA OSEA                                          :ET
-    2. SALA DE RAYOS X                                              :ET
+    1. DESINTROMETRÍA OSEA                                          :DO
+    2. SALA DE RAYOS X                                              :RX
     3. ELECTROTERAPIA                                               :ET
-    4. RESONANCIA MAGNETÍCA                                         :EE2
-    5. MECANOTERAPIA                                                :EE2
-    6. HIDROTERAPIA                                                 :EE2
+    4. RESONANCIA MAGNETÍCA                                         :RM
+    5. MECANOTERAPIA                                                :MT
+    6. HIDROTERAPIA                                                 :HT
     7. ESTAR ESPERA                                                 :EE2
 TERCER PISO:
     1. REABILITACIÓN TECNOLÓGICA                                    :RT
@@ -140,7 +140,7 @@ CUARTO PISO:
 function mensaje() { 
     
     let p1;
-    p1 = "ESTAR ESPERA (2°)";
+    p1 = "CONSULTORIO PSICOLOGÍA";
 
     let sel2 = document.getElementById("hacia");
     text2= sel2.options[sel2.selectedIndex].text;
@@ -153,196 +153,197 @@ limpiarTodo();
     switch (text2) {
         case "INGRESO PRINCIPAL":
             pisoN1.style.display="block";
-            pisoN2.style.display="block";
-            pisoN3.style.display="none";
+            pisoN2.style.display="none";
+            pisoN3.style.display="block";
             pisoN4.style.display="none";
             piso1();
-            piso2();
+            piso3();
         break;
         case "ADMINISTRACION Y CONTABILIDAD":
             pisoN1.style.display="block";
-            pisoN2.style.display="block";
-            pisoN3.style.display="none";
+            pisoN2.style.display="none";
+            pisoN3.style.display="block";
             pisoN4.style.display="none";
             piso1();
-            piso2();
+            piso3();
         break;
         case "SALA DE OPERACIONES MENORES":
             pisoN1.style.display="block";
-            pisoN2.style.display="block";
-            pisoN3.style.display="none";
+            pisoN2.style.display="none";
+            pisoN3.style.display="block";
             pisoN4.style.display="none";
             piso1();
-            piso2();
+            piso3();
         break;
         case "SALA DE RECUPERACIONES":
             pisoN1.style.display="block";
-            pisoN2.style.display="block";
-            pisoN3.style.display="none";
+            pisoN2.style.display="none";
+            pisoN3.style.display="block";
             pisoN4.style.display="none";
             piso1();
-            piso2();
+            piso3();
         break;
         case "HABITACIÓN 1":
             pisoN1.style.display="block";
-            pisoN2.style.display="block";
-            pisoN3.style.display="none";
+            pisoN2.style.display="none";
+            pisoN3.style.display="block";
             pisoN4.style.display="none";
             piso1();
-            piso2();
+            piso3();
         break;
         case "HABITACIÓN 2":
             pisoN1.style.display="block";
-            pisoN2.style.display="block";
-            pisoN3.style.display="none";
+            pisoN2.style.display="none";
+            pisoN3.style.display="block";
             pisoN4.style.display="none";
             piso1();
-            piso2();
+            piso3();
         break;
         case "ESTAR ESPERA (1°P)":
             pisoN1.style.display="block";
-            pisoN2.style.display="block";
-            pisoN3.style.display="none";
+            pisoN2.style.display="none";
+            pisoN3.style.display="block";
             pisoN4.style.display="none";
             piso1();
-            piso2();
+            piso3();
         break;
         case "BAÑOS (1°P)":
             pisoN1.style.display="block";
-            pisoN2.style.display="block";
-            pisoN3.style.display="none";
+            pisoN2.style.display="none";
+            pisoN3.style.display="block";
             pisoN4.style.display="none";
             piso1();
-            piso2();
+            piso3();
         break;
         case "DESINTROMETRÍA OSEA":
             pisoN1.style.display="none";
             pisoN2.style.display="block";
-            pisoN3.style.display="none";
+            pisoN3.style.display="block";
             pisoN4.style.display="none";
             piso2();
+            piso3();
         break;
         case "SALA DE RAYOS X":
             pisoN1.style.display="none";
             pisoN2.style.display="block";
-            pisoN3.style.display="none";
+            pisoN3.style.display="block";
             pisoN4.style.display="none";
             piso2();
+            piso3();
         break;
         case "ELECTROTERAPIA":
             pisoN1.style.display="none";
             pisoN2.style.display="block";
-            pisoN3.style.display="none";
+            pisoN3.style.display="block";
             pisoN4.style.display="none";
             piso2();
+            piso3();
         break;
         case "RESONANCIA MAGNETICA":
             pisoN1.style.display="none";
             pisoN2.style.display="block";
-            pisoN3.style.display="none";
+            pisoN3.style.display="block";
             pisoN4.style.display="none";
             piso2();
+            piso3();
         break;
         case "MECANOTERAPIA":
             pisoN1.style.display="none";
             pisoN2.style.display="block";
-            pisoN3.style.display="none";
+            pisoN3.style.display="block";
             pisoN4.style.display="none";
             piso2();
+            piso3();
         break;
         case "HIDROTERAPIA":
             pisoN1.style.display="none";
             pisoN2.style.display="block";
-            pisoN3.style.display="none";
+            pisoN3.style.display="block";
             pisoN4.style.display="none";
             piso2();
+            piso3();
         break;
-        case "REABILITACIÓN TECNOLÓGICA":
+        case "ESTAR ESPERA (2°P)":
             pisoN1.style.display="none";
             pisoN2.style.display="block";
             pisoN3.style.display="block";
             pisoN4.style.display="none";
             piso2();
+            piso3();
+        break;
+        case "REABILITACIÓN TECNOLÓGICA":
+            pisoN1.style.display="none";
+            pisoN2.style.display="none";
+            pisoN3.style.display="block";
+            pisoN4.style.display="none";
             piso3();
         break;
         case "EVALUACIÓN FISIOLÓGICA Y BIOQUÍMICA":
             pisoN1.style.display="none";
-            pisoN2.style.display="block";
+            pisoN2.style.display="none";
             pisoN3.style.display="block";
             pisoN4.style.display="none";
-            piso2();
             piso3();
         break;
         case "CONSULTORIO NUTRICIONISTA":
             pisoN1.style.display="none";
-            pisoN2.style.display="block";
+            pisoN2.style.display="none";
             pisoN3.style.display="block";
             pisoN4.style.display="none";
-            piso2();
             piso3();
         break;
         case "CONSULTORIO ORTOPEDISTA":
             pisoN1.style.display="none";
-            pisoN2.style.display="block";
+            pisoN2.style.display="none";
             pisoN3.style.display="block";
             pisoN4.style.display="none";
-            piso2();
-            piso3();
-        break;
-        case "CONSULTORIO PSICOLOGÍA":
-            pisoN1.style.display="none";
-            pisoN2.style.display="block";
-            pisoN3.style.display="block";
-            pisoN4.style.display="none";
-            piso2();
             piso3();
         break;
         case "CONSULTORIO CARDIOLOGÍA":
             pisoN1.style.display="none";
-            pisoN2.style.display="block";
+            pisoN2.style.display="none";
             pisoN3.style.display="block";
             pisoN4.style.display="none";
-            piso2();
             piso3();
         break;
         case "ESTAR ESPERA (3°P)":
             pisoN1.style.display="none";
-            pisoN2.style.display="block";
+            pisoN2.style.display="none";
             pisoN3.style.display="block";
             pisoN4.style.display="none";
-            piso2();
             piso3();
         break;
         case "ZONA DE MÁQUINAS PARA EJERCITAR PIERNAS":
             pisoN1.style.display="none";
-            pisoN2.style.display="block";
-            pisoN3.style.display="none";
+            pisoN2.style.display="none";
+            pisoN3.style.display="block";
             pisoN4.style.display="block";
-            piso2();
+            piso3();
             piso4();
         break;
         case "ZONA DE MÁQUINAS PARA EJERCICIO AEROBICO Y CALENTAMIENTO":
             pisoN1.style.display="none";
-            pisoN2.style.display="block";
-            pisoN3.style.display="none";
+            pisoN1.style.display="none";
+            pisoN2.style.display="none";
+            pisoN3.style.display="block";
             pisoN4.style.display="block";
-            piso2();
+            piso3();
             piso4();
         break;
         case "ZONA DE MÁQUINAS PARA EJERCITAR BRAZOS":
             pisoN1.style.display="none";
-            pisoN2.style.display="block";
-            pisoN3.style.display="none";
+            pisoN2.style.display="none";
+            pisoN3.style.display="block";
             pisoN4.style.display="block";
-            piso2();
+            piso3();
             piso4();
         break;
         case "BAÑOS (4°P)":
             pisoN1.style.display="none";
-            pisoN2.style.display="block";
-            pisoN3.style.display="none";
+            pisoN2.style.display="none";
+            pisoN3.style.display="block";
             pisoN4.style.display="block";
-            piso2();
+            piso3();
             piso4();
         break;
     }       
@@ -350,129 +351,129 @@ limpiarTodo();
 function caminos(){
     switch (text2) {
         case "INGRESO PRINCIPAL":
-            EE2();
+            CP();
             IP();
-            EE2_IP();
+            CP_IP();
         break;
         case "ADMINISTRACION Y CONTABILIDAD":
-            EE2();
+            CP();
             AYC();
-            EE2_AYC();
+            CP_AYC();
         break;
         case "SALA DE OPERACIONES MENORES":
-            EE2();
+            CP();
             SOM();
-            EE2_SOM();
+            CP_SOM();
         break;
         case "SALA DE RECUPERACIONES":
-            EE2();
+            CP();
             SR();
-            EE2_SR();
+            CP_SR();
         break;
         case "HABITACIÓN 1":
-            EE2();
+            CP();
             H1();
-            EE2_H1();
+            CP_H1();
         break;
         case "HABITACIÓN 2":
-            EE2();
+            CP();
             H2();
-            EE2_H2();
+            CP_H2();
         break;
         case "ESTAR ESPERA (1°P)":
-            EE2();
+            CP();
             EE1();
-            EE2_EE1();
+            CP_EE1();
         break;
         case "BAÑOS (1°P)":
-            EE2();
+            CP();
             B1();
-            EE2_B1();
+            CP_B1();
         break;
         case "DESINTROMETRÍA OSEA":
-            EE2();
+            CP();
             DO();
-            EE2_DO();
+            CP_DO();
         break;
         case "SALA DE RAYOS X":
-            EE2();
+            CP();
             RX();
-            EE2_RX();
+            CP_RX();
         break;
         case "ELECTROTERAPIA":
-            EE2();
+            CP();
             ET();
-            EE2_ET();
+            CP_ET();
         break;
         case "RESONANCIA MAGNETICA":
-            EE2();
+            CP();
             RM();
-            EE2_RM();
+            CP_RM();
         break;
         case "MECANOTERAPIA":
-            EE2();
+            CP();
             MT();
-            EE2_MT();
+            CP_MT();
         break;
         case "HIDROTERAPIA":
-            EE2();
+            CP();
             HT();
-            EE2_HT();
+            CP_HT();
+        break;
+        case "ESTAR ESPERA (2°P)":
+            CP();
+            EE2();
+            CP_EE2();
         break;
         case "REABILITACIÓN TECNOLÓGICA":
-            EE2();
+            CP();
             RT();
-            EE2_RT();
+            CP_RT();
         break;
         case "EVALUACIÓN FISIOLÓGICA Y BIOQUÍMICA":
-            EE2();
+            CP();
             EFB();
-            EE2_EFB();
+            CP_EFB();
         break;
         case "CONSULTORIO NUTRICIONISTA":
-            EE2();
+            CP();
             CN();
-            EE2_CN();
+            CP_CN();
         break;
         case "CONSULTORIO ORTOPEDISTA":
-            EE2();
-            CO();
-            EE2_CO();
-        break;
-        case "CONSULTORIO PSICOLOGÍA":
-            EE2();
             CP();
-            EE2_CP();
+            CO();
+            CP_CO();
         break;
         case "CONSULTORIO CARDIOLOGÍA":
-            EE2();
+            CP();
             CC();
-            EE2_CC();
+            CP_CC();
         break;
         case "ESTAR ESPERA (3°P)":
-            EE2();
+            CP();
             EE3();
-            EE2_EE3();
+            CP_EE3();
         break;
         case "ZONA DE MÁQUINAS PARA EJERCITAR PIERNAS":
-            EE2();
+            CP();
             ZP();
-            EE2_ZP();
+            CP_ZP();
         break;
         case "ZONA DE MÁQUINAS PARA EJERCICIO AEROBICO Y CALENTAMIENTO":
-            EE2();
+            CP();
             ZAC();
-            EE2_ZAC();
+            CP_ZAC();
         break;
         case "ZONA DE MÁQUINAS PARA EJERCITAR BRAZOS":
-            EE2();
+            CP();
             ZB();
-            EE2_ZB();
+            CP_ZB();
         break;
         case "BAÑOS (4°P)":
-            EE2();
+            CP();
             B4();
-            EE2_B4();
+            CP_B4();
         break;
     }       
 }
@@ -602,7 +603,7 @@ function B1() {
 
 // Camino primer piso
 
-function EE2_IP() {
+function CP_IP() {
 
     const mi_canvas1 = document.getElementById("canvas1");
     const contexto1 = mi_canvas1.getContext("2d");
@@ -625,7 +626,7 @@ function EE2_IP() {
     }
     const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
 
-    const mi_canvas2 = document.getElementById("canvas2");
+    const mi_canvas2 = document.getElementById("canvas3");
     const contexto2 = mi_canvas2.getContext("2d");
     function animar_imagen1() {
         contexto2.beginPath();
@@ -633,12 +634,13 @@ function EE2_IP() {
         contexto2.stroke();
         contexto2.lineWidth= 10;
         contexto2.moveTo(40,100);
-        contexto2.lineTo(40,180);
-        contexto2.lineTo(90,180);
-
-        contexto2.moveTo(100,190);
+        contexto2.lineTo(40,190);
+        contexto2.lineTo(100,190);
         contexto2.lineTo(100,250);
-        contexto2.lineTo(235,250);
+        contexto2.lineTo(283,250);
+        contexto2.lineTo(283,200);
+
+        contexto2.moveTo(235,250);
         contexto2.lineTo(235,300);
 
         contexto2.stroke();
@@ -657,7 +659,7 @@ function EE2_IP() {
     }
     const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
 }
-function EE2_AYC() {
+function CP_AYC() {
     const mi_canvas1 = document.getElementById("canvas1");
     const contexto1 = mi_canvas1.getContext("2d");
     function animar_imagen2() {
@@ -679,7 +681,7 @@ function EE2_AYC() {
     }
     const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
 
-    const mi_canvas2 = document.getElementById("canvas2");
+    const mi_canvas2 = document.getElementById("canvas3");
     const contexto2 = mi_canvas2.getContext("2d");
     function animar_imagen1() {
         contexto2.beginPath();
@@ -687,12 +689,13 @@ function EE2_AYC() {
         contexto2.stroke();
         contexto2.lineWidth= 10;
         contexto2.moveTo(40,100);
-        contexto2.lineTo(40,180);
-        contexto2.lineTo(90,180);
-
-        contexto2.moveTo(100,190);
+        contexto2.lineTo(40,190);
+        contexto2.lineTo(100,190);
         contexto2.lineTo(100,250);
-        contexto2.lineTo(235,250);
+        contexto2.lineTo(283,250);
+        contexto2.lineTo(283,200);
+
+        contexto2.moveTo(235,250);
         contexto2.lineTo(235,300);
 
         contexto2.stroke();
@@ -711,7 +714,7 @@ function EE2_AYC() {
     }
     const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
 }
-function EE2_SOM() {
+function CP_SOM() {
     const mi_canvas1 = document.getElementById("canvas1");
     const contexto1 = mi_canvas1.getContext("2d");
     function animar_imagen2() {
@@ -734,7 +737,7 @@ function EE2_SOM() {
     }
     const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
 
-    const mi_canvas2 = document.getElementById("canvas2");
+    const mi_canvas2 = document.getElementById("canvas3");
     const contexto2 = mi_canvas2.getContext("2d");
     function animar_imagen1() {
         contexto2.beginPath();
@@ -742,12 +745,13 @@ function EE2_SOM() {
         contexto2.stroke();
         contexto2.lineWidth= 10;
         contexto2.moveTo(40,100);
-        contexto2.lineTo(40,180);
-        contexto2.lineTo(90,180);
-
-        contexto2.moveTo(100,190);
+        contexto2.lineTo(40,190);
+        contexto2.lineTo(100,190);
         contexto2.lineTo(100,250);
-        contexto2.lineTo(235,250);
+        contexto2.lineTo(283,250);
+        contexto2.lineTo(283,200);
+
+        contexto2.moveTo(235,250);
         contexto2.lineTo(235,300);
 
         contexto2.stroke();
@@ -766,7 +770,7 @@ function EE2_SOM() {
     }
     const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
 }
-function EE2_SR() {
+function CP_SR() {
     const mi_canvas1 = document.getElementById("canvas1");
     const contexto1 = mi_canvas1.getContext("2d");
     function animar_imagen2() {
@@ -789,7 +793,7 @@ function EE2_SR() {
     }
     const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
 
-    const mi_canvas2 = document.getElementById("canvas2");
+    const mi_canvas2 = document.getElementById("canvas3");
     const contexto2 = mi_canvas2.getContext("2d");
     function animar_imagen1() {
         contexto2.beginPath();
@@ -797,12 +801,13 @@ function EE2_SR() {
         contexto2.stroke();
         contexto2.lineWidth= 10;
         contexto2.moveTo(40,100);
-        contexto2.lineTo(40,180);
-        contexto2.lineTo(90,180);
-
-        contexto2.moveTo(100,190);
+        contexto2.lineTo(40,190);
+        contexto2.lineTo(100,190);
         contexto2.lineTo(100,250);
-        contexto2.lineTo(235,250);
+        contexto2.lineTo(283,250);
+        contexto2.lineTo(283,200);
+
+        contexto2.moveTo(235,250);
         contexto2.lineTo(235,300);
 
         contexto2.stroke();
@@ -821,7 +826,7 @@ function EE2_SR() {
     }
     const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
 }
-function EE2_H1() {
+function CP_H1() {
     const mi_canvas1 = document.getElementById("canvas1");
     const contexto1 = mi_canvas1.getContext("2d");
     function animar_imagen2() {
@@ -843,7 +848,7 @@ function EE2_H1() {
     }
     const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
 
-    const mi_canvas2 = document.getElementById("canvas2");
+    const mi_canvas2 = document.getElementById("canvas3");
     const contexto2 = mi_canvas2.getContext("2d");
     function animar_imagen1() {
         contexto2.beginPath();
@@ -851,12 +856,13 @@ function EE2_H1() {
         contexto2.stroke();
         contexto2.lineWidth= 10;
         contexto2.moveTo(40,100);
-        contexto2.lineTo(40,180);
-        contexto2.lineTo(90,180);
-
-        contexto2.moveTo(100,190);
+        contexto2.lineTo(40,190);
+        contexto2.lineTo(100,190);
         contexto2.lineTo(100,250);
-        contexto2.lineTo(235,250);
+        contexto2.lineTo(283,250);
+        contexto2.lineTo(283,200);
+
+        contexto2.moveTo(235,250);
         contexto2.lineTo(235,300);
 
         contexto2.stroke();
@@ -875,7 +881,7 @@ function EE2_H1() {
     }
     const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
 }
-function EE2_H2() {
+function CP_H2() {
     const mi_canvas1 = document.getElementById("canvas1");
     const contexto1 = mi_canvas1.getContext("2d");
     function animar_imagen2() {
@@ -897,7 +903,7 @@ function EE2_H2() {
     }
     const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
 
-    const mi_canvas2 = document.getElementById("canvas2");
+    const mi_canvas2 = document.getElementById("canvas3");
     const contexto2 = mi_canvas2.getContext("2d");
     function animar_imagen1() {
         contexto2.beginPath();
@@ -905,12 +911,13 @@ function EE2_H2() {
         contexto2.stroke();
         contexto2.lineWidth= 10;
         contexto2.moveTo(40,100);
-        contexto2.lineTo(40,180);
-        contexto2.lineTo(90,180);
-
-        contexto2.moveTo(100,190);
+        contexto2.lineTo(40,190);
+        contexto2.lineTo(100,190);
         contexto2.lineTo(100,250);
-        contexto2.lineTo(235,250);
+        contexto2.lineTo(283,250);
+        contexto2.lineTo(283,200);
+
+        contexto2.moveTo(235,250);
         contexto2.lineTo(235,300);
 
         contexto2.stroke();
@@ -929,7 +936,7 @@ function EE2_H2() {
     }
     const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
 }
-function EE2_EE1() {
+function CP_EE1() {
     const mi_canvas1 = document.getElementById("canvas1");
     const contexto1 = mi_canvas1.getContext("2d");
     function animar_imagen2() {
@@ -950,7 +957,7 @@ function EE2_EE1() {
     }
     const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
 
-    const mi_canvas2 = document.getElementById("canvas2");
+    const mi_canvas2 = document.getElementById("canvas3");
     const contexto2 = mi_canvas2.getContext("2d");
     function animar_imagen1() {
         contexto2.beginPath();
@@ -958,12 +965,14 @@ function EE2_EE1() {
         contexto2.stroke();
         contexto2.lineWidth= 10;
         contexto2.moveTo(40,100);
-        contexto2.lineTo(40,180);
-        contexto2.lineTo(90,180);
-
-        contexto2.moveTo(100,190);
+        contexto2.lineTo(40,190);
+        contexto2.lineTo(100,190);
         contexto2.lineTo(100,250);
-        contexto2.lineTo(235,250);
+        contexto2.lineTo(283,250);
+        contexto2.lineTo(283,200);
+
+
+        contexto2.moveTo(235,250);
         contexto2.lineTo(235,300);
 
         contexto2.stroke();
@@ -982,7 +991,7 @@ function EE2_EE1() {
     }
     const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
 }
-function EE2_B1() {
+function CP_B1() {
     const mi_canvas1 = document.getElementById("canvas1");
     const contexto1 = mi_canvas1.getContext("2d");
     function animar_imagen2() {
@@ -1005,7 +1014,7 @@ function EE2_B1() {
     }
     const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
 
-    const mi_canvas2 = document.getElementById("canvas2");
+    const mi_canvas2 = document.getElementById("canvas3");
     const contexto2 = mi_canvas2.getContext("2d");
     function animar_imagen1() {
         contexto2.beginPath();
@@ -1013,12 +1022,13 @@ function EE2_B1() {
         contexto2.stroke();
         contexto2.lineWidth= 10;
         contexto2.moveTo(40,100);
-        contexto2.lineTo(40,180);
-        contexto2.lineTo(90,180);
-
-        contexto2.moveTo(100,190);
+        contexto2.lineTo(40,190);
+        contexto2.lineTo(100,190);
         contexto2.lineTo(100,250);
-        contexto2.lineTo(235,250);
+        contexto2.lineTo(283,250);
+        contexto2.lineTo(283,200);
+
+        contexto2.moveTo(235,250);
         contexto2.lineTo(235,300);
 
         contexto2.stroke();
@@ -1136,7 +1146,7 @@ function EE2() {
     function animar_imagen() {
         let x = 100, y = 170;
         contexto.beginPath();
-        contexto.strokeStyle="red"
+        contexto.strokeStyle="blue"
         contexto.lineWidth= 20;
         contexto.moveTo(x,y);
         contexto.lineTo(x,y + 20);
@@ -1148,109 +1158,397 @@ function EE2() {
 
 // Camino segundo piso
 
-function EE2_DO() {
-    const mi_canvas2 = document.getElementById("canvas2");
-    const contexto1 = mi_canvas2.getContext("2d");
+function CP_DO() {
+    const mi_canvas1 = document.getElementById("canvas2");
+    const contexto1 = mi_canvas1.getContext("2d");
     function animar_imagen1() {
         contexto1.beginPath();
         contexto1.strokeStyle="green"
         contexto1.stroke();
         contexto1.lineWidth= 10;
-        contexto1.moveTo(100,190);
+        contexto1.moveTo(190,250);
         contexto1.lineTo(100,250);
-        contexto1.lineTo(225,250);
+        contexto1.lineTo(100,160);
+        contexto1.lineTo(60,160);
+        contexto1.lineTo(60,100);
+        
+        contexto1.moveTo(175,125);
         contexto1.lineTo(225,125);
-        contexto1.lineTo(175,125);
+        contexto1.lineTo(225,250);
+        contexto1.lineTo(190,250);
+        contexto1.lineTo(190,300);
 
         contexto1.stroke();
     }
     const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
-}
-function EE2_RX() {
+    
+    const mi_canvas2 = document.getElementById("canvas3");
+    const contexto2 = mi_canvas2.getContext("2d");
+    function animar_imagen2() {
+        contexto2.beginPath();
+        contexto2.strokeStyle="green"
+        contexto2.stroke();
+        contexto2.lineWidth= 10;
+        contexto2.moveTo(40,100);
+        contexto2.lineTo(40,190);
+        contexto2.lineTo(100,190);
+        contexto2.lineTo(100,250);
+        contexto2.lineTo(283,250);
+        contexto2.lineTo(283,200);
 
-    const mi_canvas2 = document.getElementById("canvas2");
-    const contexto1 = mi_canvas2.getContext("2d");
+        contexto2.moveTo(235,250);
+        contexto2.lineTo(235,300);
+
+        contexto2.stroke();
+        contexto2.fillStyle = "RED";
+        contexto2.fillRect(38,65,45,20);
+        contexto2.font="10pt Verdana";
+        contexto2.fillStyle = "WHITE";
+        contexto2.fillText("BAJAR",40,80);
+
+        contexto2.fillStyle = "RED";
+        contexto2.fillRect(190,300,45,20);
+        contexto2.font="10pt Verdana";
+        contexto2.fillStyle = "WHITE";
+        contexto2.fillText("BAJAR",190,315);
+        contexto2.closePath();
+    }
+    const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
+}
+function CP_RX() {
+    const mi_canvas1 = document.getElementById("canvas2");
+    const contexto1 = mi_canvas1.getContext("2d");
     function animar_imagen1() {
         contexto1.beginPath();
         contexto1.strokeStyle="green"
         contexto1.stroke();
         contexto1.lineWidth= 10;
-        contexto1.moveTo(100,190);
+        contexto1.moveTo(190,250);
         contexto1.lineTo(100,250);
+        contexto1.lineTo(100,160);
+        contexto1.lineTo(60,160);
+        contexto1.lineTo(60,100);
+        
+        contexto1.moveTo(118,280);
         contexto1.lineTo(118,250);
-        contexto1.lineTo(118,280);
+        contexto1.lineTo(190,250);
+        contexto1.lineTo(190,300);
 
         contexto1.stroke();
     }
     const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
+        
+    const mi_canvas2 = document.getElementById("canvas3");
+    const contexto2 = mi_canvas2.getContext("2d");
+    function animar_imagen2() {
+        contexto2.beginPath();
+        contexto2.strokeStyle="green"
+        contexto2.stroke();
+        contexto2.lineWidth= 10;
+        contexto2.moveTo(40,100);
+        contexto2.lineTo(40,190);
+        contexto2.lineTo(100,190);
+        contexto2.lineTo(100,250);
+        contexto2.lineTo(283,250);
+        contexto2.lineTo(283,200);
+
+        contexto2.moveTo(235,250);
+        contexto2.lineTo(235,300);
+
+        contexto2.stroke();
+        contexto2.fillStyle = "RED";
+        contexto2.fillRect(38,65,45,20);
+        contexto2.font="10pt Verdana";
+        contexto2.fillStyle = "WHITE";
+        contexto2.fillText("BAJAR",40,80);
+
+        contexto2.fillStyle = "RED";
+        contexto2.fillRect(190,300,45,20);
+        contexto2.font="10pt Verdana";
+        contexto2.fillStyle = "WHITE";
+        contexto2.fillText("BAJAR",190,315);
+        contexto2.closePath();
+    }
+    const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
 }
-function EE2_ET() {
-    const mi_canvas2 = document.getElementById("canvas2");
-    const contexto1 = mi_canvas2.getContext("2d");
+function CP_ET() {
+    const mi_canvas1 = document.getElementById("canvas2");
+    const contexto1 = mi_canvas1.getContext("2d");
     function animar_imagen1() {
         contexto1.beginPath();
         contexto1.strokeStyle="green"
         contexto1.stroke();
         contexto1.lineWidth= 10;
-        contexto1.moveTo(100,190);
+        contexto1.moveTo(190,250);
         contexto1.lineTo(100,250);
+        contexto1.lineTo(100,160);
+        contexto1.lineTo(60,160);
+        contexto1.lineTo(60,100);
+        
+        contexto1.moveTo(283,280);
         contexto1.lineTo(283,250);
-        contexto1.lineTo(283,280);
+        contexto1.lineTo(190,250);
+        contexto1.lineTo(190,300);
 
         contexto1.stroke();
     }
     const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
+        
+    const mi_canvas2 = document.getElementById("canvas3");
+    const contexto2 = mi_canvas2.getContext("2d");
+    function animar_imagen2() {
+        contexto2.beginPath();
+        contexto2.strokeStyle="green"
+        contexto2.stroke();
+        contexto2.lineWidth= 10;
+        contexto2.moveTo(40,100);
+        contexto2.lineTo(40,190);
+        contexto2.lineTo(100,190);
+        contexto2.lineTo(100,250);
+        contexto2.lineTo(283,250);
+        contexto2.lineTo(283,200);
+
+        contexto2.moveTo(235,250);
+        contexto2.lineTo(235,300);
+
+        contexto2.stroke();
+        contexto2.fillStyle = "RED";
+        contexto2.fillRect(38,65,45,20);
+        contexto2.font="10pt Verdana";
+        contexto2.fillStyle = "WHITE";
+        contexto2.fillText("BAJAR",40,80);
+
+        contexto2.fillStyle = "RED";
+        contexto2.fillRect(190,300,45,20);
+        contexto2.font="10pt Verdana";
+        contexto2.fillStyle = "WHITE";
+        contexto2.fillText("BAJAR",190,315);
+        contexto2.closePath();
+    }
+    const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
 }
-function EE2_RM() {
-    const mi_canvas2 = document.getElementById("canvas2");
-    const contexto1 = mi_canvas2.getContext("2d");
+function CP_RM() {
+    const mi_canvas1 = document.getElementById("canvas2");
+    const contexto1 = mi_canvas1.getContext("2d");
     function animar_imagen1() {
         contexto1.beginPath();
         contexto1.strokeStyle="green"
         contexto1.stroke();
         contexto1.lineWidth= 10;
-        contexto1.moveTo(100,190);
+        contexto1.moveTo(190,250);
         contexto1.lineTo(100,250);
+        contexto1.lineTo(100,160);
+        contexto1.lineTo(60,160);
+        contexto1.lineTo(60,100);
+        
+        contexto1.moveTo(283,200);
         contexto1.lineTo(283,250);
-        contexto1.lineTo(283,200);
+        contexto1.lineTo(190,250);
+        contexto1.lineTo(190,300);
 
         contexto1.stroke();
     }
     const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
+        
+    const mi_canvas2 = document.getElementById("canvas3");
+    const contexto2 = mi_canvas2.getContext("2d");
+    function animar_imagen2() {
+        contexto2.beginPath();
+        contexto2.strokeStyle="green"
+        contexto2.stroke();
+        contexto2.lineWidth= 10;
+        contexto2.moveTo(40,100);
+        contexto2.lineTo(40,190);
+        contexto2.lineTo(100,190);
+        contexto2.lineTo(100,250);
+        contexto2.lineTo(283,250);
+        contexto2.lineTo(283,200);
+
+        contexto2.moveTo(235,250);
+        contexto2.lineTo(235,300);
+
+        contexto2.stroke();
+        contexto2.fillStyle = "RED";
+        contexto2.fillRect(38,65,45,20);
+        contexto2.font="10pt Verdana";
+        contexto2.fillStyle = "WHITE";
+        contexto2.fillText("BAJAR",40,80);
+
+        contexto2.fillStyle = "RED";
+        contexto2.fillRect(190,300,45,20);
+        contexto2.font="10pt Verdana";
+        contexto2.fillStyle = "WHITE";
+        contexto2.fillText("BAJAR",190,315);
+        contexto2.closePath();
+    }
+    const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
 }
-function EE2_MT() {
-    const mi_canvas2 = document.getElementById("canvas2");
-    const contexto1 = mi_canvas2.getContext("2d");
+function CP_MT() {
+    const mi_canvas1 = document.getElementById("canvas2");
+    const contexto1 = mi_canvas1.getContext("2d");
     function animar_imagen1() {
         contexto1.beginPath();
         contexto1.strokeStyle="green"
         contexto1.stroke();
         contexto1.lineWidth= 10;
-        contexto1.moveTo(100,190);
+        contexto1.moveTo(190,250);
         contexto1.lineTo(100,250);
-        contexto1.lineTo(300,250);
+        contexto1.lineTo(100,160);
+        contexto1.lineTo(60,160);
+        contexto1.lineTo(60,100);
+        
+        contexto1.moveTo(300,250);
+        contexto1.lineTo(190,250);
+        contexto1.lineTo(190,300);
 
         contexto1.stroke();
     }
     const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
+        
+    const mi_canvas2 = document.getElementById("canvas3");
+    const contexto2 = mi_canvas2.getContext("2d");
+    function animar_imagen2() {
+        contexto2.beginPath();
+        contexto2.strokeStyle="green"
+        contexto2.stroke();
+        contexto2.lineWidth= 10;
+        contexto2.moveTo(40,100);
+        contexto2.lineTo(40,190);
+        contexto2.lineTo(100,190);
+        contexto2.lineTo(100,250);
+        contexto2.lineTo(283,250);
+        contexto2.lineTo(283,200);
+
+        contexto2.moveTo(235,250);
+        contexto2.lineTo(235,300);
+
+        contexto2.stroke();
+        contexto2.fillStyle = "RED";
+        contexto2.fillRect(38,65,45,20);
+        contexto2.font="10pt Verdana";
+        contexto2.fillStyle = "WHITE";
+        contexto2.fillText("BAJAR",40,80);
+
+        contexto2.fillStyle = "RED";
+        contexto2.fillRect(190,300,45,20);
+        contexto2.font="10pt Verdana";
+        contexto2.fillStyle = "WHITE";
+        contexto2.fillText("BAJAR",190,315);
+        contexto2.closePath();
+    }
+    const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
 }
-function EE2_HT() {
-    const mi_canvas2 = document.getElementById("canvas2");
-    const contexto1 = mi_canvas2.getContext("2d");
+function CP_HT() {
+    const mi_canvas1 = document.getElementById("canvas2");
+    const contexto1 = mi_canvas1.getContext("2d");
     function animar_imagen1() {
         contexto1.beginPath();
         contexto1.strokeStyle="green"
         contexto1.stroke();
         contexto1.lineWidth= 10;
-        contexto1.moveTo(100,190);
+        contexto1.moveTo(190,250);
         contexto1.lineTo(100,250);
-        contexto1.lineTo(283,250);
+        contexto1.lineTo(100,160);
+        contexto1.lineTo(60,160);
+        contexto1.lineTo(60,100);
+        
+        contexto1.moveTo(300,213);
         contexto1.lineTo(283,213);
-        contexto1.lineTo(300,213);
+        contexto1.lineTo(283,250);
+        contexto1.lineTo(190,250);
+        contexto1.lineTo(190,300);
 
         contexto1.stroke();
     }
     const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
+        
+    const mi_canvas2 = document.getElementById("canvas3");
+    const contexto2 = mi_canvas2.getContext("2d");
+    function animar_imagen2() {
+        contexto2.beginPath();
+        contexto2.strokeStyle="green"
+        contexto2.stroke();
+        contexto2.lineWidth= 10;
+        contexto2.moveTo(40,100);
+        contexto2.lineTo(40,190);
+        contexto2.lineTo(100,190);
+        contexto2.lineTo(100,250);
+        contexto2.lineTo(283,250);
+        contexto2.lineTo(283,200);
+
+        contexto2.moveTo(235,250);
+        contexto2.lineTo(235,300);
+
+        contexto2.stroke();
+        contexto2.fillStyle = "RED";
+        contexto2.fillRect(38,65,45,20);
+        contexto2.font="10pt Verdana";
+        contexto2.fillStyle = "WHITE";
+        contexto2.fillText("BAJAR",40,80);
+
+        contexto2.fillStyle = "RED";
+        contexto2.fillRect(190,300,45,20);
+        contexto2.font="10pt Verdana";
+        contexto2.fillStyle = "WHITE";
+        contexto2.fillText("BAJAR",190,315);
+        contexto2.closePath();
+    }
+    const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
+}
+function CP_EE2() {
+    const mi_canvas1 = document.getElementById("canvas2");
+    const contexto1 = mi_canvas1.getContext("2d");
+    function animar_imagen1() {
+        contexto1.beginPath();
+        contexto1.strokeStyle="green"
+        contexto1.stroke();
+        contexto1.lineWidth= 10;
+        contexto1.moveTo(100,170);
+        contexto1.lineTo(100,160);
+        contexto1.lineTo(60,160);
+        contexto1.lineTo(60,100);
+        
+        contexto1.moveTo(100,190);
+        contexto1.lineTo(100,250);
+        contexto1.lineTo(190,250);
+        contexto1.lineTo(190,300);
+
+        contexto1.stroke();
+    }
+    const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
+        
+    const mi_canvas2 = document.getElementById("canvas3");
+    const contexto2 = mi_canvas2.getContext("2d");
+    function animar_imagen2() {
+        contexto2.beginPath();
+        contexto2.strokeStyle="green"
+        contexto2.stroke();
+        contexto2.lineWidth= 10;
+        contexto2.moveTo(40,100);
+        contexto2.lineTo(40,190);
+        contexto2.lineTo(100,190);
+        contexto2.lineTo(100,250);
+        contexto2.lineTo(283,250);
+        contexto2.lineTo(283,200);
+
+        contexto2.moveTo(235,250);
+        contexto2.lineTo(235,300);
+
+        contexto2.stroke();
+        contexto2.fillStyle = "RED";
+        contexto2.fillRect(38,65,45,20);
+        contexto2.font="10pt Verdana";
+        contexto2.fillStyle = "WHITE";
+        contexto2.fillText("BAJAR",40,80);
+
+        contexto2.fillStyle = "RED";
+        contexto2.fillRect(190,300,45,20);
+        contexto2.font="10pt Verdana";
+        contexto2.fillStyle = "WHITE";
+        contexto2.fillText("BAJAR",190,315);
+        contexto2.closePath();
+    }
+    const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
 }
 
 // Destino tercer piso
@@ -1307,7 +1605,7 @@ function CP() {
     function animar_imagen() {
         let x = 283, y = 180;
         contexto.beginPath();
-        contexto.strokeStyle="blue"
+        contexto.strokeStyle="red"
         contexto.lineWidth= 20;
         contexto.moveTo(x,y);
         contexto.lineTo(x,y + 20);
@@ -1364,395 +1662,107 @@ function EE3() {
 
 // Camino tercer piso
 
-function EE2_RT() {
-    const mi_canvas1 = document.getElementById("canvas2");
-    const contexto1 = mi_canvas1.getContext("2d");
-    function animar_imagen2() {
-        contexto1.beginPath();
-        contexto1.strokeStyle="green"
-        contexto1.stroke();
-        contexto1.lineWidth= 10;
-        contexto1.moveTo(100,170);
-        contexto1.lineTo(100,160);
-        contexto1.lineTo(60,160);
-        contexto1.lineTo(60,100);
-        
-        contexto1.moveTo(100,190);
-        contexto1.lineTo(100,250);
-        contexto1.lineTo(190,250);
-        contexto1.lineTo(190,300);
-
-        contexto1.stroke();
-        contexto1.fillStyle = "RED";
-        contexto1.fillRect(38,65,45,20);
-        contexto1.font="10pt Verdana";
-        contexto1.fillStyle = "WHITE";
-        contexto1.fillText("SUBIR",40,80);
-
-        contexto1.fillStyle = "RED";
-        contexto1.fillRect(190,300,45,20);
-        contexto1.font="10pt Verdana";
-        contexto1.fillStyle = "WHITE";
-        contexto1.fillText("SUBIR",190,315);
-        contexto1.closePath();
-    }
-    const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
-
-    const mi_canvas2 = document.getElementById("canvas3");
-    const contexto2 = mi_canvas2.getContext("2d");
-    function animar_imagen1() {
-        contexto2.beginPath();
-        contexto2.strokeStyle="green"
-        contexto2.stroke();
-        contexto2.lineWidth= 10;
-        contexto2.moveTo(40,100);
-        contexto2.lineTo(40,180);
-        contexto2.lineTo(100,180);
-        contexto2.lineTo(100,250);
-        contexto2.lineTo(240,250);
-        contexto2.lineTo(220,250);
-        contexto2.lineTo(220,125);
-        contexto2.lineTo(175,125);
-
-        contexto2.moveTo(235,250);
-        contexto2.lineTo(235,300);
-
-        contexto2.stroke();
-    }
-    const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
-}
-function EE2_EFB() {
+function CP_RT() {
     
-    const mi_canvas1 = document.getElementById("canvas2");
-    const contexto1 = mi_canvas1.getContext("2d");
-    function animar_imagen2() {
-        contexto1.beginPath();
-        contexto1.strokeStyle="green"
-        contexto1.stroke();
-        contexto1.lineWidth= 10;
-        contexto1.moveTo(100,170);
-        contexto1.lineTo(100,160);
-        contexto1.lineTo(60,160);
-        contexto1.lineTo(60,100);
-        
-        contexto1.moveTo(100,190);
-        contexto1.lineTo(100,250);
-        contexto1.lineTo(190,250);
-        contexto1.lineTo(190,300);
-
-        contexto1.stroke();
-        contexto1.fillStyle = "RED";
-        contexto1.fillRect(38,65,45,20);
-        contexto1.font="10pt Verdana";
-        contexto1.fillStyle = "WHITE";
-        contexto1.fillText("SUBIR",40,80);
-
-        contexto1.fillStyle = "RED";
-        contexto1.fillRect(190,300,45,20);
-        contexto1.font="10pt Verdana";
-        contexto1.fillStyle = "WHITE";
-        contexto1.fillText("SUBIR",190,315);
-        contexto1.closePath();
-    }
-    const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
-
     const mi_canvas2 = document.getElementById("canvas3");
     const contexto2 = mi_canvas2.getContext("2d");
-    function animar_imagen1() {
+    function animar_imagen2() {
         contexto2.beginPath();
         contexto2.strokeStyle="green"
         contexto2.stroke();
         contexto2.lineWidth= 10;
-        contexto2.moveTo(40,100);
-        contexto2.lineTo(40,180);
-        contexto2.lineTo(100,180);
-        contexto2.lineTo(100,250);
-        contexto2.lineTo(168,250);
-        contexto2.lineTo(168,280);
-
-        contexto2.moveTo(235,300);
+        contexto2.moveTo(175,125);
+        contexto2.lineTo(235,125);
         contexto2.lineTo(235,250);
-        contexto2.lineTo(168,250);
-
-        contexto2.stroke();
-    }
-    const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
-}
-function EE2_CN() {
-   
-    const mi_canvas1 = document.getElementById("canvas2");
-    const contexto1 = mi_canvas1.getContext("2d");
-    function animar_imagen2() {
-        contexto1.beginPath();
-        contexto1.strokeStyle="green"
-        contexto1.stroke();
-        contexto1.lineWidth= 10;
-        contexto1.moveTo(100,170);
-        contexto1.lineTo(100,160);
-        contexto1.lineTo(60,160);
-        contexto1.lineTo(60,100);
-        
-        contexto1.moveTo(100,190);
-        contexto1.lineTo(100,250);
-        contexto1.lineTo(190,250);
-        contexto1.lineTo(190,300);
-
-        contexto1.stroke();
-        contexto1.fillStyle = "RED";
-        contexto1.fillRect(38,65,45,20);
-        contexto1.font="10pt Verdana";
-        contexto1.fillStyle = "WHITE";
-        contexto1.fillText("SUBIR",40,80);
-
-        contexto1.fillStyle = "RED";
-        contexto1.fillRect(190,300,45,20);
-        contexto1.font="10pt Verdana";
-        contexto1.fillStyle = "WHITE";
-        contexto1.fillText("SUBIR",190,315);
-        contexto1.closePath();
-    }
-    const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
-
-    const mi_canvas2 = document.getElementById("canvas3");
-    const contexto2 = mi_canvas2.getContext("2d");
-    function animar_imagen1() {
-        contexto2.beginPath();
-        contexto2.strokeStyle="green"
-        contexto2.stroke();
-        contexto2.lineWidth= 10;
-        contexto2.moveTo(40,100);
-        contexto2.lineTo(40,180);
-        contexto2.lineTo(100,180);
-        contexto2.lineTo(100,250);
-        contexto2.lineTo(283,250);
-        contexto2.lineTo(283,280);
-
-        contexto2.moveTo(235,300);
-        contexto2.lineTo(235,250);
-        contexto2.lineTo(283,250);
-
-        contexto2.stroke();
-    }
-    const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
-}
-function EE2_CP() {
-    
-    const mi_canvas1 = document.getElementById("canvas2");
-    const contexto1 = mi_canvas1.getContext("2d");
-    function animar_imagen2() {
-        contexto1.beginPath();
-        contexto1.strokeStyle="green"
-        contexto1.stroke();
-        contexto1.lineWidth= 10;
-        contexto1.moveTo(100,170);
-        contexto1.lineTo(100,160);
-        contexto1.lineTo(60,160);
-        contexto1.lineTo(60,100);
-        
-        contexto1.moveTo(100,190);
-        contexto1.lineTo(100,250);
-        contexto1.lineTo(190,250);
-        contexto1.lineTo(190,300);
-
-        contexto1.stroke();
-        contexto1.fillStyle = "RED";
-        contexto1.fillRect(38,65,45,20);
-        contexto1.font="10pt Verdana";
-        contexto1.fillStyle = "WHITE";
-        contexto1.fillText("SUBIR",40,80);
-
-        contexto1.fillStyle = "RED";
-        contexto1.fillRect(190,300,45,20);
-        contexto1.font="10pt Verdana";
-        contexto1.fillStyle = "WHITE";
-        contexto1.fillText("SUBIR",190,315);
-        contexto1.closePath();
-    }
-    const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
-
-    const mi_canvas2 = document.getElementById("canvas3");
-    const contexto2 = mi_canvas2.getContext("2d");
-    function animar_imagen1() {
-        contexto2.beginPath();
-        contexto2.strokeStyle="green"
-        contexto2.stroke();
-        contexto2.lineWidth= 10;
-        contexto2.moveTo(40,100);
-        contexto2.lineTo(40,180);
-        contexto2.lineTo(100,180);
-        contexto2.lineTo(100,250);
         contexto2.lineTo(283,250);
         contexto2.lineTo(283,200);
 
-        contexto2.moveTo(235,300);
-        contexto2.lineTo(235,250);
-        contexto2.lineTo(283,250);
-
         contexto2.stroke();
     }
     const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
 }
-function EE2_CO() {
+function CP_EFB() {
     
-    const mi_canvas1 = document.getElementById("canvas2");
-    const contexto1 = mi_canvas1.getContext("2d");
-    function animar_imagen2() {
-        contexto1.beginPath();
-        contexto1.strokeStyle="green"
-        contexto1.stroke();
-        contexto1.lineWidth= 10;
-        contexto1.moveTo(100,170);
-        contexto1.lineTo(100,160);
-        contexto1.lineTo(60,160);
-        contexto1.lineTo(60,100);
-        
-        contexto1.moveTo(100,190);
-        contexto1.lineTo(100,250);
-        contexto1.lineTo(190,250);
-        contexto1.lineTo(190,300);
-
-        contexto1.stroke();
-        contexto1.fillStyle = "RED";
-        contexto1.fillRect(38,65,45,20);
-        contexto1.font="10pt Verdana";
-        contexto1.fillStyle = "WHITE";
-        contexto1.fillText("SUBIR",40,80);
-
-        contexto1.fillStyle = "RED";
-        contexto1.fillRect(190,300,45,20);
-        contexto1.font="10pt Verdana";
-        contexto1.fillStyle = "WHITE";
-        contexto1.fillText("SUBIR",190,315);
-        contexto1.closePath();
-    }
-    const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
-
     const mi_canvas2 = document.getElementById("canvas3");
     const contexto2 = mi_canvas2.getContext("2d");
-    function animar_imagen1() {
+    function animar_imagen2() {
         contexto2.beginPath();
         contexto2.strokeStyle="green"
         contexto2.stroke();
         contexto2.lineWidth= 10;
-        contexto2.moveTo(40,100);
-        contexto2.lineTo(40,180);
-        contexto2.lineTo(100,180);
-        contexto2.lineTo(100,250);
-        contexto2.lineTo(300,250);
-
-        contexto2.moveTo(235,300);
-        contexto2.lineTo(235,250);
+        contexto2.moveTo(168,280);
+        contexto2.lineTo(168,250);
         contexto2.lineTo(283,250);
+        contexto2.lineTo(283,200);
 
         contexto2.stroke();
     }
     const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
 }
-function EE2_CC() {
-   
-    const mi_canvas1 = document.getElementById("canvas2");
-    const contexto1 = mi_canvas1.getContext("2d");
-    function animar_imagen2() {
-        contexto1.beginPath();
-        contexto1.strokeStyle="green"
-        contexto1.stroke();
-        contexto1.lineWidth= 10;
-        contexto1.moveTo(100,170);
-        contexto1.lineTo(100,160);
-        contexto1.lineTo(60,160);
-        contexto1.lineTo(60,100);
-        
-        contexto1.moveTo(100,190);
-        contexto1.lineTo(100,250);
-        contexto1.lineTo(190,250);
-        contexto1.lineTo(190,300);
-
-        contexto1.stroke();
-        contexto1.fillStyle = "RED";
-        contexto1.fillRect(38,65,45,20);
-        contexto1.font="10pt Verdana";
-        contexto1.fillStyle = "WHITE";
-        contexto1.fillText("SUBIR",40,80);
-
-        contexto1.fillStyle = "RED";
-        contexto1.fillRect(190,300,45,20);
-        contexto1.font="10pt Verdana";
-        contexto1.fillStyle = "WHITE";
-        contexto1.fillText("SUBIR",190,315);
-        contexto1.closePath();
-    }
-    const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
-
+function CP_CO() {
+    
+    
     const mi_canvas2 = document.getElementById("canvas3");
     const contexto2 = mi_canvas2.getContext("2d");
-    function animar_imagen1() {
+    function animar_imagen2() {
         contexto2.beginPath();
         contexto2.strokeStyle="green"
         contexto2.stroke();
         contexto2.lineWidth= 10;
-        contexto2.moveTo(40,100);
-        contexto2.lineTo(40,180);
-        contexto2.lineTo(100,180);
-        contexto2.lineTo(100,250);
+        contexto2.moveTo(300,250);
         contexto2.lineTo(283,250);
+        contexto2.lineTo(283,200);
+
+        contexto2.stroke();
+    }
+    const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
+}
+function CP_CN() {
+    
+    
+    const mi_canvas2 = document.getElementById("canvas3");
+    const contexto2 = mi_canvas2.getContext("2d");
+    function animar_imagen2() {
+        contexto2.beginPath();
+        contexto2.strokeStyle="green"
+        contexto2.stroke();
+        contexto2.lineWidth= 10;
+        contexto2.moveTo(283,200);
+        contexto2.lineTo(283,280);
+
+        contexto2.stroke();
+    }
+    const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
+}
+function CP_CC() {
+   
+    
+    const mi_canvas2 = document.getElementById("canvas3");
+    const contexto2 = mi_canvas2.getContext("2d");
+    function animar_imagen2() {
+        contexto2.beginPath();
+        contexto2.strokeStyle="green"
+        contexto2.stroke();
+        contexto2.lineWidth= 10;
+        contexto2.moveTo(283,200);
         contexto2.lineTo(283,213);
         contexto2.lineTo(300,213);
 
-        contexto2.moveTo(235,300);
-        contexto2.lineTo(235,250);
-
         contexto2.stroke();
     }
     const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
 }
-function EE2_EE3() {
-
-    const mi_canvas1 = document.getElementById("canvas2");
-    const contexto1 = mi_canvas1.getContext("2d");
-    function animar_imagen2() {
-        contexto1.beginPath();
-        contexto1.strokeStyle="green"
-        contexto1.stroke();
-        contexto1.lineWidth= 10;
-        contexto1.moveTo(100,170);
-        contexto1.lineTo(100,160);
-        contexto1.lineTo(60,160);
-        contexto1.lineTo(60,100);
-        
-        contexto1.moveTo(100,190);
-        contexto1.lineTo(100,250);
-        contexto1.lineTo(190,250);
-        contexto1.lineTo(190,300);
-
-        contexto1.stroke();
-        contexto1.fillStyle = "RED";
-        contexto1.fillRect(38,65,45,20);
-        contexto1.font="10pt Verdana";
-        contexto1.fillStyle = "WHITE";
-        contexto1.fillText("SUBIR",40,80);
-
-        contexto1.fillStyle = "RED";
-        contexto1.fillRect(190,300,45,20);
-        contexto1.font="10pt Verdana";
-        contexto1.fillStyle = "WHITE";
-        contexto1.fillText("SUBIR",190,315);
-        contexto1.closePath();
-    }
-    const fx_animar_imagen1 = requestAnimationFrame(animar_imagen1);
+function CP_EE3() {
 
     const mi_canvas2 = document.getElementById("canvas3");
     const contexto2 = mi_canvas2.getContext("2d");
-    function animar_imagen1() {
+    function animar_imagen2() {
         contexto2.beginPath();
         contexto2.strokeStyle="green"
         contexto2.stroke();
         contexto2.lineWidth= 10;
-        contexto2.moveTo(40,100);
-        contexto2.lineTo(40,180);
-        contexto2.lineTo(90,180);
-
-        contexto2.moveTo(235,300);
-        contexto2.lineTo(235,250);
+        contexto2.moveTo(283,200);
+        contexto2.lineTo(283,250);
         contexto2.lineTo(100,250);
         contexto2.lineTo(100,190);
 
@@ -1825,22 +1835,23 @@ function B4() {
 }
 // Camino cuarto piso
 
-function EE2_ZP() {
+function CP_ZP() {
    
-    const mi_canvas1 = document.getElementById("canvas2");
+    const mi_canvas1 = document.getElementById("canvas3");
     const contexto1 = mi_canvas1.getContext("2d");
-    function animar_imagen2() {
+    function animar_imagen1() {
         contexto1.beginPath();
         contexto1.strokeStyle="green"
         contexto1.stroke();
         contexto1.lineWidth= 10;
-        contexto1.moveTo(100,170);
-        contexto1.lineTo(100,160);
+        contexto1.moveTo(60,100);
         contexto1.lineTo(60,160);
-        contexto1.lineTo(60,100);
-        
-        contexto1.moveTo(100,190);
+        contexto1.lineTo(100,160);
         contexto1.lineTo(100,250);
+        contexto1.lineTo(283,250);
+        contexto1.lineTo(283,200);
+        
+        contexto1.moveTo(168,250);
         contexto1.lineTo(190,250);
         contexto1.lineTo(190,300);
 
@@ -1862,7 +1873,7 @@ function EE2_ZP() {
 
     const mi_canvas2 = document.getElementById("canvas4");
     const contexto2 = mi_canvas2.getContext("2d");
-    function animar_imagen1() {
+    function animar_imagen2() {
         contexto2.beginPath();
         contexto2.strokeStyle="green"
         contexto2.stroke();
@@ -1881,22 +1892,23 @@ function EE2_ZP() {
     }
     const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
 }
-function EE2_ZAC() {
+function CP_ZAC() {
  
-    const mi_canvas1 = document.getElementById("canvas2");
+    const mi_canvas1 = document.getElementById("canvas3");
     const contexto1 = mi_canvas1.getContext("2d");
-    function animar_imagen2() {
+    function animar_imagen1() {
         contexto1.beginPath();
         contexto1.strokeStyle="green"
         contexto1.stroke();
         contexto1.lineWidth= 10;
-        contexto1.moveTo(100,170);
-        contexto1.lineTo(100,160);
+        contexto1.moveTo(60,100);
         contexto1.lineTo(60,160);
-        contexto1.lineTo(60,100);
-        
-        contexto1.moveTo(100,190);
+        contexto1.lineTo(100,160);
         contexto1.lineTo(100,250);
+        contexto1.lineTo(283,250);
+        contexto1.lineTo(283,200);
+
+        contexto1.moveTo(168,250);
         contexto1.lineTo(190,250);
         contexto1.lineTo(190,300);
 
@@ -1918,7 +1930,7 @@ function EE2_ZAC() {
 
     const mi_canvas2 = document.getElementById("canvas4");
     const contexto2 = mi_canvas2.getContext("2d");
-    function animar_imagen1() {
+    function animar_imagen2() {
         contexto2.beginPath();
         contexto2.strokeStyle="green"
         contexto2.stroke();
@@ -1937,22 +1949,23 @@ function EE2_ZAC() {
     }
     const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
 }
-function EE2_ZB() {
+function CP_ZB() {
     
-    const mi_canvas1 = document.getElementById("canvas2");
+    const mi_canvas1 = document.getElementById("canvas3");
     const contexto1 = mi_canvas1.getContext("2d");
-    function animar_imagen2() {
+    function animar_imagen1() {
         contexto1.beginPath();
         contexto1.strokeStyle="green"
         contexto1.stroke();
         contexto1.lineWidth= 10;
-        contexto1.moveTo(100,170);
-        contexto1.lineTo(100,160);
+        contexto1.moveTo(60,100);
         contexto1.lineTo(60,160);
-        contexto1.lineTo(60,100);
-        
-        contexto1.moveTo(100,190);
+        contexto1.lineTo(100,160);
         contexto1.lineTo(100,250);
+        contexto1.lineTo(283,250);
+        contexto1.lineTo(283,200);
+        
+        contexto1.moveTo(168,250);
         contexto1.lineTo(190,250);
         contexto1.lineTo(190,300);
 
@@ -1974,7 +1987,7 @@ function EE2_ZB() {
 
     const mi_canvas2 = document.getElementById("canvas4");
     const contexto2 = mi_canvas2.getContext("2d");
-    function animar_imagen1() {
+    function animar_imagen2() {
         contexto2.beginPath();
         contexto2.strokeStyle="green"
         contexto2.stroke();
@@ -1999,22 +2012,23 @@ function EE2_ZB() {
     }
     const fx_animar_imagen2 = requestAnimationFrame(animar_imagen2);
 }
-function EE2_B4() {
+function CP_B4() {
   
-    const mi_canvas1 = document.getElementById("canvas2");
+    const mi_canvas1 = document.getElementById("canvas3");
     const contexto1 = mi_canvas1.getContext("2d");
-    function animar_imagen2() {
+    function animar_imagen1() {
         contexto1.beginPath();
         contexto1.strokeStyle="green"
         contexto1.stroke();
         contexto1.lineWidth= 10;
-        contexto1.moveTo(100,170);
-        contexto1.lineTo(100,160);
+        contexto1.moveTo(60,100);
         contexto1.lineTo(60,160);
-        contexto1.lineTo(60,100);
-        
-        contexto1.moveTo(100,190);
+        contexto1.lineTo(100,160);
         contexto1.lineTo(100,250);
+        contexto1.lineTo(283,250);
+        contexto1.lineTo(283,200);
+        
+        contexto1.moveTo(168,250);
         contexto1.lineTo(190,250);
         contexto1.lineTo(190,300);
 
@@ -2036,7 +2050,7 @@ function EE2_B4() {
 
     const mi_canvas2 = document.getElementById("canvas4");
     const contexto2 = mi_canvas2.getContext("2d");
-    function animar_imagen1() {
+    function animar_imagen2() {
         contexto2.beginPath();
         contexto2.strokeStyle="green"
         contexto2.stroke();
